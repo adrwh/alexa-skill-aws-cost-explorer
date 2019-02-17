@@ -15,7 +15,7 @@ Install Node and NPM
 
 and then install the Alex Skills Kit
 
-`npm install ask-sdk` 
+`npm install -g ask-sdk` 
 
 and then create a new skill using this repository as the template
   
@@ -28,6 +28,12 @@ and then change directory into the lambda code folder
 and then install the necessary node modules for this skill
 
 `npm install`
+
+and the change back to the root directory of your skill
+
+`cd ../../`
+
+and then rename your `.ask/config-orig` to `.ask/config`
 
 and then update you `skill.json` file as you wish 
 
