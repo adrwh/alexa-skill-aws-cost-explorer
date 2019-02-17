@@ -1,0 +1,240 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "cost explorer",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloIntent",
+          "samples": [
+            "hi",
+            "hello",
+            "sup"
+          ]
+        },
+        {
+          "name": "CEIntent",
+          "slots": [
+            {
+              "name": "moment",
+              "type": "WhenMoment"
+            },
+            {
+              "name": "service",
+              "type": "AWSService"
+            }
+          ],
+          "samples": [
+            "get {moment} costs for {service}",
+            "get {moment} {service} costs",
+            "{moment} {service}",
+            "how much was {service} in {moment}",
+            "how much was {service} for {moment}",
+            "how much was {service} {moment}",
+            "tell me the costs for {service} in {moment}",
+            "tell me the costs for {service} for {moment}",
+            "tell me the costs for {service} {moment}",
+            "what about {service} in {moment}",
+            "what about {service} for {moment}",
+            "what about {service} {moment}",
+            "what were the {service} costs for {moment}",
+            "what were the {service} costs in {moment}",
+            "what were our {service} costs for {moment}",
+            "what were our {service} costs in {moment}",
+            "what were the {service} costs {moment}",
+            "what were our {service} costs {moment}"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "compute",
+                "synonyms": [
+                  "EC2",
+                  "compute",
+                  "e. c. two",
+                  "elastic compute"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "storage",
+                "synonyms": [
+                  "S 3",
+                  "S3",
+                  "simple storage",
+                  "s. three"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "lambda",
+                "synonyms": [
+                  "serverless"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "support"
+              }
+            },
+            {
+              "name": {
+                "value": "load balancing"
+              }
+            },
+            {
+              "name": {
+                "value": "elastic search"
+              }
+            },
+            {
+              "name": {
+                "value": "vpc"
+              }
+            },
+            {
+              "name": {
+                "value": "cloud trail"
+              }
+            },
+            {
+              "name": {
+                "value": "database",
+                "synonyms": [
+                  "rds"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "cloud watch",
+                "synonyms": [
+                  "logs",
+                  "logging"
+                ]
+              }
+            }
+          ],
+          "name": "AWSService"
+        },
+        {
+          "name": "WhenMoment",
+          "values": [
+            {
+              "name": {
+                "value": "this week"
+              }
+            },
+            {
+              "name": {
+                "value": "last week"
+              }
+            },
+            {
+              "name": {
+                "value": "this month"
+              }
+            },
+            {
+              "name": {
+                "value": "last month"
+              }
+            },
+            {
+              "name": {
+                "value": "this year"
+              }
+            },
+            {
+              "name": {
+                "value": "last year"
+              }
+            },
+            {
+              "name": {
+                "value": "january"
+              }
+            },
+            {
+              "name": {
+                "value": "february"
+              }
+            },
+            {
+              "name": {
+                "value": "march"
+              }
+            },
+            {
+              "name": {
+                "value": "april"
+              }
+            },
+            {
+              "name": {
+                "value": "may"
+              }
+            },
+            {
+              "name": {
+                "value": "june"
+              }
+            },
+            {
+              "name": {
+                "value": "july"
+              }
+            },
+            {
+              "name": {
+                "value": "august"
+              }
+            },
+            {
+              "name": {
+                "value": "september"
+              }
+            },
+            {
+              "name": {
+                "value": "october"
+              }
+            },
+            {
+              "name": {
+                "value": "november"
+              }
+            },
+            {
+              "name": {
+                "value": "december"
+              }
+            }
+        ]
+        }
+      ]
+    }
+  }
+}
