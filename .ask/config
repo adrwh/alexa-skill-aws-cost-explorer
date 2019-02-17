@@ -1,8 +1,33 @@
 {
   "deploy_settings": {
-    "default": {
-      "skill_id": "",
-      "merge": {}
+    "skills": {
+      "skill_id": "amzn1.ask.skill.8cfbb8bf-29cc-4538-a141-3130febe5ba5",
+      "was_cloned": false,
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "cfa6018ba9c6521669b6b3e402cd44cb"
+        },
+        "interactionModel": {
+          "en-AU": {
+            "eTag": "129f423eed6394e4644e1f2655c067ff"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:044026515814:function:aws-cost-explorer-skills",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "aws-cost-explorer-skills",
+            "handler": "index.handler",
+            "revisionId": "04251cde-5425-4514-8756-a6d0a4a199ed",
+            "runtime": "nodejs8.10"
+          }
+        ]
+      }
     }
   }
- 
+}

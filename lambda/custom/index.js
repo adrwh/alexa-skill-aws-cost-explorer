@@ -3,7 +3,7 @@
 
 const Alexa = require('ask-sdk-core');
 const AWS = require('aws-sdk')
-const m = require('./getMoments')
+const m = require('./util.js')
 
 let creds = new AWS.Credentials(process.env.akid, process.env.sak);
 
