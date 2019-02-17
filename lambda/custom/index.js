@@ -29,13 +29,7 @@ const CEIntentHandler = {
   },
   async handle(handlerInput) {
     //console.log(JSON.stringify(handlerInput.requestEnvelope.request))
-    const { accessToken } = handlerInput.requestEnvelope.context.System.user;
-    if (accessToken == undefined) {
-      return handlerInput.responseBuilder
-          .speak('You must have an account to access your live data. Please use the Alexa app to link your Amazon account.')
-          .withLinkAccountCard()
-          .getResponse()
-    }
+    
     let ce = new AWS.CostExplorer({
       apiVersion: '2017-10-25',
       //credentials: creds

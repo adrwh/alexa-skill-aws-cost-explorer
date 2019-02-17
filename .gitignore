@@ -1,3 +1,4 @@
 lambda/custom/node_modules
-.ask
-./skill.json
+.ask/config
+skill.json
+.gitignore
