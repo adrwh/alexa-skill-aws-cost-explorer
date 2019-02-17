@@ -32,7 +32,7 @@ const CEIntentHandler = {
     
     let ce = new AWS.CostExplorer({
       apiVersion: '2017-10-25',
-      //credentials: creds
+      credentials: creds
     })
 
     let moment = handlerInput.requestEnvelope.request.intent.slots.moment.value
